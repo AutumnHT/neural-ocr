@@ -1,0 +1,16 @@
+body {
+  background-image: url('maze.png');
+  background-repeat: repeat;
+  font-family: 'Open Sans';
+  margin-left: 50px;
+  margin-right: 45%;
+  margin-top: 50px;
+}
+h1 {
+  font-family: 'Bitter';
+}
+#github {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}

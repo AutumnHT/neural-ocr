@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Neural network for optical character recognition (OCR)." />
+    <meta name="author" content="Bryan Cuccioli" />
+    <title>Neural Network OCR</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter:700|Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="github">
+      <a href="https://github.com/bcuccioli/neural-ocr">
+        <img src="github.png" alt="Fork me on Github!" />
+      </a>
+    </div>
+    <h1>Neural Network OCR</h1>
+    <p>neural-ocr is a feed-forward neural network with back-propagation
+    learning that is used for optical character recognition (OCR). It was
+    trained and tested using normalized images derived from the
+    <a href="http://yann.lecun.com/exdb/mnist/">MNIST database</a> of
+    handwritten digits.</p>
+    <p>Tuning the various parameters (number of layers, height of layers,
+    activation threshold, bias weight, etc.) allows us to achieve a maximum
+    correct recognition rate of approximately 35%. This is low because of the
+    small amount of training data - the MNIST dataset offers only 1000 images
+    of each digit. In a practical application, a training dataset of millions
+    of images would result in much higher recognition rates. Regardless, the
+    recognition rate for a purely random decision machine would be only 10%, so
+    consistently achieving rates of higher than 30% is statistically
+    significant.</p>
+    <p>These results, as well as the detailed design and implementation of
+    the neural network, are described in depth in
+    <a href="final.pdf">the final paper</a>.</p>
+    <div id="social">
+      <g:plusone annotation="none"></g:plusone>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+          if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+            js.src="//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);}}
+        (document,"script","twitter-wjs");
+      </script>
+    </div>
+  </body>
+</html>
